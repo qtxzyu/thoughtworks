@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>UML_testing</title>
+<meta http-equiv="content-type" content="text/html charset=UTF-8">
+<style type="text/css">
+body {margin-left: 30px;margin-top:30px}
+#question {margin-left: 30px}
+<!-- 少加一个table(代表标签)，直接使用#question来使得更够改变table的样式 -->
+#question2 {margin-left:100px}
+</style>
+</head>
+<body>
+<form action="action_page.php" method="GET">
+<h1 style="font-family:verdana">统一建模语言理论测试</h1>
+<table>
+<tr>
+<td>考试科目:</td>
+<td>统一建模语言</td>
+<td>时间:</td>
+<td>100分钟</td>
+<td>得分:</td>
+<td>100</td>
+</tr>
+<tr>
+<td>班级:</td>
+<td><input type="text" name="class" value="1班"</td>
+<td>学号:</td>
+<td><input type="text" name="stuid" value="001"></td>
+<td>姓名:</td>
+<td><input type="text" name="name" value="王小闹"></td>
+</tr>
+</table>
+
+<h2 style="font-family:verdana">
+一、填空题（每空5分，共20分）</h2>
+<table id="question">
+<tr>
+<td>1.UML的中文全称是:</td>
+<td><input type="text" name="UMLname" value="统一建模语言"></td>
+</tr>
+<tr>
+<td>2.对象最突出的特征是:</td>
+<td><input type="text" name="value1" value="封装性"></td>
+<td><input type="text" name="value2" value="继承性"></td>
+<td><input type="text" name="value3" value="多态性"></td>
+</table>
+
+
+<h2 style="font-family:verdana">二、选择题（每题10分，共20分）</h2>
+<fieldset id="question">
+<legend style="font-size:20px">1.UML与软件工程的关系是:</legend>
+<input type="radio" name="question1" value="val1">(A)UML就是软件工程
+<br>
+<input type="radio" name="question1" value="val2" checked>(B)UML参与到软件工程中软件开发过程的几个阶段
+<br>
+<input type="radio" name="question1" value="val3">(C)UML与软件工程无关
+<br>
+<input type="radio" name="question1" value="val4">(D)UML是软件工程的一部分
+<br>
+</fieldset>
+<fieldset id="question">
+<legend style="font-size:20px">2.Java语言支持:</legend>
+<input type="radio" name="question2" value="val1">(A)单继承
+<br>
+<input type="radio" name="question2" value="val2" checked>(B)多继承
+<br>
+<input type="radio" name="question2" value="val3">(C)单继承和多继承都支持
+<br>
+<input type="radio" name="question2" value="val4">(D)单继承和多继承都不支持
+<br>
+</fieldset>
+
+<h2 style="font-family:verdana">
+三、多择题（每题10分，共20分）</h2>
+<fieldset id="question">
+<legend style="font-size:20px">1.用例的粒度分为以下哪三种:</legend>
+<input type="checkbox" name="question3" value="val1">(A)概述级
+<br>
+<input type="checkbox" name="question3" value="val2" checked>(B)需求级
+<br>
+<input type="checkbox" name="question3" value="val3" checked>(C)用户目标级
+<br>
+<input type="checkbox" name="question3" value="val4">(D)子功能级
+<br>
+</fieldset>
+<fieldset id="question">
+<legend style="font-size:20px">2.类图由以下哪三个部分组成:</legend>
+<input type="checkbox" name="question4" value="val1" checked>(A)名称（Name）
+<br>
+<input type="checkbox" name="question4" value="val2" checked>(B)属性（Attribute）
+<br>
+<input type="checkbox" name="question4" value="val3" checked>(C)操作（Operation）
+<br>
+<input type="checkbox" name="question4" value="val4">(D)方法（Function）
+<br>
+</fieldset>	
+<h2 style="font-family:verdana">四、判断题（每题10分，共20分）</h2>
+<p id="question">
+<p id="question">1.用例图只是用于和客户交流和沟通的，用于确定需求。
+</p>
+<p id="question"><input type="radio" name="question5" value="val1" checked>&radic;<input type="radio" name="question5" value="val2">&times;
+</p>
+<p id="question">
+2.在状态图中，终止状态在一个状态图中允许有任意多个。
+</p>
+<p id="question">
+<input type="radio" name="question6" value="val1" checked>&radic;<input type="radio" name="question6" value="val2">&times;
+</p>
+<!-- &radic表示√符号，&times表示为叉叉符号，&yen为人民币符号-->
+
+<h2 style="font-family:verdana">
+五、简答题（每题10分，共20分）</h2>
+<p id="question">1.简述什么是模型以及模型的表现形式？</p>
+<textarea id="question" name="message" rows="10" cols="50">
+模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体；可以是某种图形；或者是一种数学表达式。
+</textarea>
+<br>
+<input id="question" type="submit" value="计算分数">
+</form>
+</body>
+</html>
